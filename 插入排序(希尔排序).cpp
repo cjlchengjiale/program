@@ -50,3 +50,17 @@ void printnum(int* array,int size)
   }
   printf("\n");
 }
+int main()
+{
+  int num = 0;
+  scanf("%d",&num);
+  int *array = (int*)malloc(sizeof(int)*num);
+  for(int i = 0;i<num;i++)
+  {
+    scanf("%d",&array[i]);
+  }
+  shellsort(array,num);
+  printnum(array,num);
+  system("pause");
+  return 0;
+}
