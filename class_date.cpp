@@ -1,4 +1,40 @@
 #include<iostream>
+#include<vector>
+using namespace std;
+void t()
+{
+	vector<int> v(4,100);
+
+	// bool a = v.empty();
+	// v.reserve(2);
+	// cout<<v.size()<<endl;
+	// cout<<v.capacity()<<endl;
+	// v.reserve(90);
+	// cout<<v.capacity()<<endl;
+	// v.reserve(2);
+	// cout<<v.capacity()<<endl;
+	// cout<<v.size()<<endl;
+	vector<int> v1(10,1);
+	int i = 0;
+	vector<int>::iterator it = v1.begin();
+	while(it != v1.end())
+	{
+		cout<<*it;
+		*it = i++;
+		it++;
+	}
+	cout<<endl;
+	for(int & num:v1)
+		cout<<num;
+	cout<<endl;
+	//v.reserve(20);
+	v1.push_back(10);
+	v1[0] = 20;
+	for(int & num:v1)
+		cout<<num<<" ";
+	// vector<int>::iterator pos = find(v1.begin(), v1.end(), 3);
+	//cout<<v1.find(3);
+}
 using namespace std;
 class A1
 {
@@ -223,3 +259,7 @@ private:
 	int _month;
 	int _year;
 };
+int main()
+{
+	t();
+}

@@ -57,7 +57,7 @@ void queuepop(queue* q)
       q->front = next;
       if(q->front == NULL)
         q->rear = NULL;
-        --q->size;
+      --q->size;
   }
 }
 qtype queuefront(queue* q)

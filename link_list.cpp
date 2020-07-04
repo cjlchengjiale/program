@@ -29,7 +29,7 @@ void headcinlink(linklist &L,int n)//头插输入
     L->next=p;
   }
 }
-void backcinlink(linklist &L,int n)//尾插输入
+void backcinlink(linklist L,int n)//尾插输入
 {
   linklist p,q;
   p=L;
@@ -360,37 +360,37 @@ int main()
   cout<<"输入数据"<<endl;
   backcinlink(l,a);
   printlink(l);
-  cout<<endl<<"头插个数"<<endl;
-  cin>>b;
-  cout<<"输入数据"<<endl;
-  headcinlink(p,b);
-  printlink(p);
-  cout<<endl;
-  int q=connectlink(m,l,p);
-  cout<<q<<endl;
-  cout<<"连接后的链表数据"<<endl;
-  printlink(m);
-  cout<<endl<<"输入删除的结点"<<endl;;
-  cin>>c;
-  deletelik(m,c,q);
-  cout<<"删除后节点后的链表"<<endl;
-  printlink(m);
-  cout<<endl;
-  cout<<"输入要加入结点的数据和位置"<<endl;
-  cin>>e>>d;
-  addlink(m,e,d,--q);
-  cout<<"连接后的链表"<<endl;
-  printlink(m);
-  cout<<endl;
-  int o;
-  cout<<"输入分离的链表结点"<<endl;
-  cin>>o;
-  cutlink(m,y,z,o,++q);
-  cout<<"分开后的链表"<<endl;
-  printlink(y);
-  cout<<endl;
-  printlink(z);
-  cout<<endl;//*/
+  // cout<<endl<<"头插个数"<<endl;
+  // cin>>b;
+  // cout<<"输入数据"<<endl;
+  // headcinlink(p,b);
+  // printlink(p);
+  // cout<<endl;
+  // int q=connectlink(m,l,p);
+  // cout<<q<<endl;
+  // cout<<"连接后的链表数据"<<endl;
+  // printlink(m);
+  // cout<<endl<<"输入删除的结点"<<endl;;
+  // cin>>c;
+  // deletelik(m,c,q);
+  // cout<<"删除后节点后的链表"<<endl;
+  // printlink(m);
+  // cout<<endl;
+  // cout<<"输入要加入结点的数据和位置"<<endl;
+  // cin>>e>>d;
+  // addlink(m,e,d,--q);
+  // cout<<"连接后的链表"<<endl;
+  // printlink(m);
+  // cout<<endl;
+  // int o;
+  // cout<<"输入分离的链表结点"<<endl;
+  // cin>>o;
+  // cutlink(m,y,z,o,++q);
+  // cout<<"分开后的链表"<<endl;
+  // printlink(y);
+  // cout<<endl;
+  // printlink(z);
+  // cout<<endl;//*/
   //into();
   return 0;
 }
